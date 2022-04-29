@@ -8,9 +8,10 @@
 :root {
     --main-color: #00449e;
     --secondry-color: #ff41b4;
+    --white-color: white;
 }
 ::-webkit-scrollbar {
-    width: 18px;
+    width: 10px;
   }
   ::-webkit-scrollbar-track {
     background-color: #242424;
@@ -69,8 +70,9 @@ header form input {
     border: none;
     border-radius: 40px;
     background-color: #4e3b47;
-    caret-color: white;
+    caret-color: var(--white-color);
     transition: 0.5s;
+    color: white;
 }
 header form input:hover {
     transform: scale(110%);
@@ -93,7 +95,7 @@ header button:hover {
 }
 header button a {
     text-transform: uppercase;
-    color: white;
+    color: var(--white-color);
     font-weight: bold;
     font-size: 16px;
 }
@@ -127,11 +129,11 @@ section.landeing .container .text h2 {
     word-spacing: -2px;
     max-width: 70%;
     margin: 0 auto 20px auto;
-    color: white;
+    color: var(--white-color);
     font-weight: bolder;
 }
 section.landeing .container .text h4 {
-    color: white;
+    color: var(--white-color);
     font-size: 18px;
 }
 @media (max-width:991px) {
@@ -145,7 +147,7 @@ section.popular {
     background-color: #121212;
 }
 section.popular  h2 {
-    color: white;
+    color: var(--white-color);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -163,7 +165,7 @@ section.popular ul.list li {
 }
 section.popular ul.list li a ,
 section.popular ul.list li p {
-    color: white;
+    color: var(--white-color);
     font-size: 20px;
     font-weight: bolder;
 }
@@ -191,7 +193,7 @@ section.popular .icone div {
     margin-right: 4px;
     border-radius: 3px;
     border: 2px solid var(--main-color);
-    color: white;
+    color: var(--white-color);
     font-weight: bolder;
 }
 section.popular .icone div:first-child {
@@ -252,7 +254,7 @@ footer span {
     var(--secondry-color),
     var(--main-color),
     #4e3b47,
-    white,
+    var(--white-color),
     var(--secondry-color));
     color: transparent;
     font-weight: bolder;
